@@ -1,18 +1,20 @@
 <footer id="footer">
   <div class="container">
-    <div class="col-sm-7">
-      <ul class="footer-nav">
-        <li><%= link_to 'Profile', page_path('profile') %></li>
-        <li><%= link_to 'Contact', page_path('contact') %></li>
-        <li><%= link_to 'Buy/Sell', buy_sell_path %></li>
-        <li><%= link_to 'Water Rights', show_water_rights_path %></li>
-        <% unless user_signed_in? %>
-          <li><%= link_to 'Login', new_user_session_path %></li>
-        <% end %>
-      </ul>
-    </div>
-    <div class="col-sm-5 text-right">
-      <span>Copyright 2017. Riley Water Consulting</span>
+    <div class="row">
+      <div class="col-md-7">
+        <ul class="footer-nav">
+          <li><%= link_to 'Profile', page_path('profile') %></li>
+          <li><%= link_to 'Contact', page_path('contact') %></li>
+          <li><%= link_to 'Buy/Sell', buy_sell_path %></li>
+          <li><%= link_to 'Water Rights', show_water_rights_path %></li>
+          <% unless user_signed_in? %>
+            <li><%= link_to 'Login', new_user_session_path %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="col-md-5 text-right">
+        <span>Copyright 2017. Riley Water Consulting</span>
+      </div>
     </div>
   </div>
 </footer>

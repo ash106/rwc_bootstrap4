@@ -12,14 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require popper
 //= require bootstrap-sprockets
 //= require underscore
 //= require jquery-readyselector
 //= require jquery.dataTables.min
-//= require dataTables.bootstrap.min
+//= require dataTables.bootstrap4.min
 //= require dataTables.responsive.min
+//- require responsive.bootstrap4.min
 //= require dataTables.buttons.min
-//= require buttons.bootstrap.min
+//= require buttons.bootstrap4.min
 //= require jszip.min
 //= require pdfmake.min
 //= require vfs_fonts

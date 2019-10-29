@@ -1,19 +1,19 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-4 show-water-rights-map">
+    <div class="col-lg-4 show-water-rights-map">
       <p class="text-center map-caption">Click a point or area on the map below to bring up water rights associated with the clicked point/area</p>
       <div class="water_rights" id="map_canvas"></div>
     </div>
   
 
-    <div class="col-md-8 show-water-rights-data" id="data">
+    <div class="col-lg-8 show-water-rights-data" id="data">
       <% if user_signed_in? %>
         <% if current_user.has_role? :admin %>
           <%= select_tag :user_id, options_for_select(@users, 0), class: 'form-control', id: 'user-selector' %>
         <% end %>
       <% end %>
 
-        <table id="water_rights_table" class="table table-striped table-bordered table-hover dt-responsive no-wrap" width="100%">
+        <table id="water_rights_table" class="table table-striped table-bordered table-hover dt-responsive no-wrap p-0" cellspacing="0" width="100%">
           <thead>
             <tr>
               <th>Water Right #</th>

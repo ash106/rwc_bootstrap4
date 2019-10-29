@@ -1,4 +1,7 @@
-<div>
-  <h5><%= @wanted.volume %> ac-ft</h5>
-  <p><%= @wanted.source %> | <%= @wanted.description %></p>
+<div class="card">
+  <div class="card-body">
+    <h6 class="card-title"><%= @wanted.volume %> ac-ft</h6>
+    <h6 class="card-subtitle mb-2 text-muted"><%= @wanted.source %></h6>
+    <p class="card-text"><%= @wanted.description %></p>
+  </div>
 </div>

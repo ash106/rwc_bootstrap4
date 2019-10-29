@@ -36,7 +36,7 @@ $(".listings-buy_sell").ready ->
         $('#wanted').append JST['templates/wanted'](wanted: wanted)
     # Otherwise print generic message
     else
-      $('#wanted').append "<div><h5>No wanted listings for this area.</h5></div>"
+      $('#wanted').append "<div><h6 class='empty-listings'>No wanted listings for this area.</h6></div>"
     # Clear for_sale div before appending new for_sales
     $('#for_sale').html ""
     # If any for_sales, append them to for_sale div
@@ -45,7 +45,7 @@ $(".listings-buy_sell").ready ->
         $('#for_sale').append JST['templates/for_sale'](for_sale: for_sale)
     # Otherwise print generic message
     else
-      $('#for_sale').html "<div><h5>No for sale listings for this area.</h5></div>"
+      $('#for_sale').html "<div><h6 class='empty-listings'>No for sale listings for this area.</h6></div>"
 
 
 $(".listings-dashboard").ready ->

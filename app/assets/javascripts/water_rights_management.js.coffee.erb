@@ -49,9 +49,9 @@ $(".water_rights_management-show_water_rights").ready ->
   wr_table = $("#water_rights_table").DataTable
                 pagingType: 'simple_numbers',
                 responsive: true,
-                dom: "<'row'<'col-sm-6'B><'col-sm-6'f>>" +
-                     "<'row'<'col-sm-12'tr>>" +
-                     "<'row'<'col-sm-5'i><'col-sm-7'p>>"
+                dom: "<'row'<'col-md-6'B><'col-md-6'f>>" +
+                     "<'row'<'col-md-12'tr>>" +
+                     "<'row'<'col-md-5'i><'col-md-7'p>>"
                 buttons: [ 
                   {
                     extend: 'copy',
@@ -59,32 +59,33 @@ $(".water_rights_management-show_water_rights").ready ->
                       columns: ':visible'
                     }
                   }
-                  {
-                    extend: 'csv',
-                    exportOptions: {
-                      columns: ':visible'
-                    }
-                  }
-                  {
-                    extend: 'excel',
-                    exportOptions: {
-                      columns: ':visible'
-                    }
-                  }
+                  # {
+                  #   extend: 'csv',
+                  #   exportOptions: {
+                  #     columns: ':visible'
+                  #   }
+                  # }
+                  # {
+                  #   extend: 'excel',
+                  #   exportOptions: {
+                  #     columns: ':visible'
+                  #   }
+                  # }
                   {
                     extend: 'pdf',
                     exportOptions: {
                       columns: ':visible'
                     }
                   }
-                  {
-                    extend: 'print',
-                    exportOptions: {
-                      columns: ':visible'
-                    }
-                  }
+                  # {
+                  #   extend: 'print',
+                  #   exportOptions: {
+                  #     columns: ':visible'
+                  #   }
+                  # }
                   {
                     extend: 'colvis',
+                    text: 'Columns',
                     columns: [0,1,2,3,4,5,6,7,8]
                   }
                 ]

@@ -1,24 +1,28 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-lg-8 offset-lg-2">
       <p class="text-center map-caption buy-sell-instructions">Click an area on the map below to bring up listings and information on the policy, then choose <strong>For Sale</strong> or <strong>Wanted</strong>. Don't see the area that you want to buy or sell water rights in? Give us a call and we'll put it up on the website.</p>
     </div>
-    <div class="col-md-6">
+    <div class="col-lg-6">
       <div class="listings" id="map_canvas"></div>
     </div>
-    <div class="col-md-6" id="data">
+    <div class="col-lg-6" id="data">
       <h3 id="listing_title">Listings</h3>
       <p id="area_policy" class="policy"></p>
-      <ul class="nav nav-pills">
-        <li class="active"><a href="#for_sale" data-toggle="pill">For Sale</a></li>
-        <li><a href="#wanted" data-toggle="pill">Wanted</a></li>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-for-sale-tab" data-toggle="pill" href="#for_sale" role="tab" aria-controls="for_sale" aria-selected="true">For Sale</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-wanted-tab" data-toggle="pill" href="#wanted" role="tab" aria-controls="wanted" aria-selected="false">Wanted</a>
+        </li>
       </ul>
-      <div class="tab-content">
-        <div class="tab-pane active" id="for_sale">
-          <p>Select an area on the map to get started!</p>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="for_sale" role="tabpanel" aria-labelledby="pills-for-sale-tab">
+          <p class="tab-placeholder">Select an area on the map to get started!</p>
         </div>
-        <div class="tab-pane" id="wanted">
-          <p>Select an area on the map to get started!</p>
+        <div class="tab-pane fade" id="wanted" role="tabpanel" aria-labelledby="pills-wanted-tab">
+          <p class="tab-placeholder">Select an area on the map to get started!</p>
         </div>
       </div>
     </div>
